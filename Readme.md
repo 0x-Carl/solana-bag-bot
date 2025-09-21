@@ -1,8 +1,8 @@
 ## FLOW
 
-Enquiry TG: https://t.me/emmarktech
-
-Discord Community: https://discord.gg/UEmCAbhz9W
+🐦 [Twitter](https://x.com/0xchizitere_eth)
+✈️ [Telegram](https://t.me/Carl_Crypt)
+🌍 [Linktree](https://linktr.ee/0xKarl)
 
 #install
 	- setup the Node.js
